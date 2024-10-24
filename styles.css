@@ -1,0 +1,252 @@
+
+
+*{
+    box-sizing: border-box; 
+    
+}
+/*Tira os espaçamentos padrões do navegador*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f9f5f0;
+}
+/*Configura e posiciona o background na main*/
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh; /* Isso fará com que o background ocupe pelo menos toda a altura da viewport */
+}
+
+/*Configura, posiciona e coloca cor nos textos*/
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-left: 15px;
+    color: white;
+    background-color: #80400085;;
+}
+/*Tamanho da logo*/
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+/*Fonte usada para titulos*/
+h1, h2{
+    font-family: playfair;
+}
+/*Fonte 2*/
+p, nav{
+    font-family: "Lato", sans-serif;
+}
+
+
+
+/*Tira as decorações padrões de lista*/
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 30px;;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+nav ul li a:hover{
+    color: #e8c39e;
+}
+
+
+/*configura tamanho e posição da sessão Bem-Vindo*/
+#home{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+/*Aumenta a fonte do Titulo*/
+#home h1{
+    font-size: 100px;
+    color: white;
+}
+#home p{
+    font-size: 50px;
+    color: white;
+}
+
+
+#menu {
+    padding: 50px 0;
+    background-color: #f9f5f0; 
+}
+
+#menu h2 {
+    text-align: center;
+    color: #8e582c;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item {
+    display: flex;
+    width: 100%;;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.coluna{
+    display: flex;
+    gap: 100px ;
+}
+
+.menu-item img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.item-info {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-info h3 {
+    font-size: 44px;
+    color: #8e582c;
+    margin-bottom: 10px;
+}
+
+.item-info .preco {
+    font-size: 30px;
+    color: #b88b5c;
+    font-weight: bold;
+}
+#contato {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f5f0;
+    padding: 50px 0;
+}
+
+#contato h1, #contato h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8e582c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contato h1 {
+    font-size: 44px;
+    border-bottom: 2px solid #b88b5c;
+    padding-bottom: 10px;
+}
+
+#contato h2 {
+    font-size: 36px;
+}
+
+.horarios {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b88b5c;
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.horarios p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.contato {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b88b5c;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    transition: border-color 0.3s;
+}
+
+.contato input:focus, .contato textarea:focus {
+    outline: none;
+    border-color: #8e582c;
+}
+
+.contato textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contato button {
+    background-color: #8e582c;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.contato button:hover {
+    background-color: #b88b5c;
+}

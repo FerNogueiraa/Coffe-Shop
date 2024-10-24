@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Importa fontes-->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <title>Restaurante Doce sabor</title>
+</head>
+<body>
+
+    <!--Cria Cabeçalho-->
+    <header>
+        <!--Titulo-->
+        <img src="img/Logo.png" alt="">
+        <!--Navegação-->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header> <!--Fim Cabeçalho-->
+
+    <!--Div para colocar background de fundo-->
+    <div class="background">
+        <!--Sessão Bem-Vindo-->
+        <main>
+            <section id="home">
+                <h1>Bem-vindo a <br>Coffe Shop</h1>
+                <p>Onde cada xícara,<br> conta uma história.</p>
+            </section>
+        </main>
+    </div>
+    <!--Sessão de Cardápios-->
+    <section id="menu">
+        <h2>Coffe Menu</h2>
+        <div class="cardapio">
+            <div class="coluna">
+                <div class="menu-item">
+                    <img src="/img/cappucino.png" alt="Croissant">
+                    <div class="item-info">
+                        <h3>Café Cappuccino</h3>
+                        <p class="preco">R$ 5,50</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/cafe.jpg" alt="Pão de Queijo">
+                    <div class="item-info">
+                        <h3>Café</h3>
+                        <p class="preco">R$ 3,00</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section><!--Fim sessão Cardápio-->
+
+    <!--Sessão Horário de funcionamento e Contato-->
+    <section id="contato">
+        <h1>Horário de Funcionamento</h1>
+        <div class="horarios">
+            <p>Segunda - Sexta<br>9:00 - 21:00</p>
+            <p>Sábado<br>10:30 - 20:00</p>
+            <p>Domingo<br>8:00 - 13:00</p>
+        </div>
+        <h2>Entre em Contato</h2>
+        <div class="contato">
+            <form>
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
